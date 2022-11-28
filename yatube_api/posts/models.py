@@ -8,7 +8,7 @@ class Group(models.Model):
     """Таблица Группы."""
     title = models.CharField(
         'Название группы', max_length=200, unique=True)
-    slug = models.SlugField('Адрес', unique=True)
+    slug = models.SlugField('Адрес', unique=True, max_length=50)
     description = models.TextField('Описание')
 
     class Meta:
@@ -67,7 +67,7 @@ class Comment(models.Model):
         on_delete=models.CASCADE,
         related_name='comments')
     text = models.TextField(
-        'Текст поста')
+        'Текст комментария')
     created = models.DateTimeField(
         'Дата добавления',
         auto_now_add=True,
