@@ -128,7 +128,7 @@ POST-запрос на тот же адрес /auth/jwt/create/, а в теле 
 Authorization. Перед самим токеном должно стоять ключевое слово Bearer и 
 пробел.
 
-![Помещение токена в заголовок](https://github.com/taube-a/api_final_yatube/blob/master/doc/token_in_headers.PNG?raw=true "Помещение токена в заголовок")
+![Помещение токена в заголовок](https://github.com/taube-a/api_final_yatube/blob/master/doc/token_in_headers.png?raw=true "Помещение токена в заголовок")
 
 3. **Создание нового поста**
 
